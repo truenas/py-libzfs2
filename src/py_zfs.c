@@ -20,7 +20,7 @@ int py_zfs_init(PyObject *type, PyObject *args, PyObject *kwds) {
 	int err;
 	py_zfs_t *zfs = (py_zfs_t *)type;
 	PyObject *history = Py_True;
-	PyObject *history_prefix = PyUnicode_FromString("py-libzfs:");
+	PyObject *history_prefix = PyUnicode_FromString("truenas_pylibzfs:");
 	PyObject *mnttab_cache = Py_True;
 	char *kwlist[] = {"history", "history_prefix", "mnttab_cache", NULL};
 
